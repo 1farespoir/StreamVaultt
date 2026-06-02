@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Check, ArrowRight } from "lucide-react";
-import { products } from "../data/products";
 import { BrandIcon } from "./BrandIcon";
 import { useCart } from "../context/CartContext";
+import { useProducts } from "../context/ProductsContext";
 import { toast } from "sonner";
 
 const ProductCard = ({ product, index }) => {
@@ -121,6 +121,7 @@ const ProductCard = ({ product, index }) => {
 };
 
 export const Subscriptions = () => {
+  const { products } = useProducts();
   return (
     <section id="subscriptions" className="relative py-24 lg:py-32" data-testid="subscriptions-section">
       <div className="absolute inset-0 halo-bg opacity-50" />

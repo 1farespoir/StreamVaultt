@@ -1,43 +1,40 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import "@/App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Toaster } from "@/components/ui/sonner";
 import { CartProvider } from "@/context/CartContext";
-import { Navbar } from "@/components/Navbar";
-import { Hero } from "@/components/Hero";
-import { Subscriptions } from "@/components/Subscriptions";
-import { WhyChooseUs } from "@/components/WhyChooseUs";
-import { Testimonials } from "@/components/Testimonials";
-import { FAQ } from "@/components/FAQ";
-import { Footer } from "@/components/Footer";
-import { CartDrawer } from "@/components/CartDrawer";
+import { ProductsProvider } from "@/context/ProductsContext";
+import HomePage from "@/pages/HomePage";
+
+const AdminDashboard = lazy(() => import("@/pages/AdminDashboard"));
 
 function App() {
   return (
-    <CartProvider>
-      <div className="App" data-testid="app-root">
-        <Navbar />
-        <main>
-          <Hero />
-          <Subscriptions />
-          <WhyChooseUs />
-          <Testimonials />
-          <FAQ />
-        </main>
-        <Footer />
-        <CartDrawer />
-        <Toaster
-          theme="dark"
-          position="bottom-right"
-          toastOptions={{
-            style: {
-              background: "rgba(10, 10, 10, 0.95)",
-              border: "1px solid rgba(0, 255, 102, 0.3)",
-              color: "#F8FAFC",
-            },
-          }}
-        />
-      </div>
-    </CartProvider>
+    <ProductsProvider>
+      <CartProvider>
+        <div className="App" data-testid="app-root">
+          <BrowserRouter>
+            <Suspense fallback={<div className="min-h-screen bg-[#050505]" />}>
+              <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/admin" element={<AdminDashboard />} />
+              </Routes>
+            </Suspense>
+          </BrowserRouter>
+          <Toaster
+            theme="dark"
+            position="bottom-right"
+            toastOptions={{
+              style: {
+                background: "rgba(10, 10, 10, 0.95)",
+                border: "1px solid rgba(0, 255, 102, 0.3)",
+                color: "#F8FAFC",
+              },
+            }}
+          />
+        </div>
+      </CartProvider>
+    </ProductsProvider>
   );
 }
 

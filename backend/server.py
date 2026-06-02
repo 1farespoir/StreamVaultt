@@ -66,6 +66,15 @@ async def get_status_checks():
     
     return status_checks
 
+# Import and include admin routes
+from routes import products, deals, testimonials, orders, settings
+
+api_router.include_router(products.router)
+api_router.include_router(deals.router)
+api_router.include_router(testimonials.router)
+api_router.include_router(orders.router)
+api_router.include_router(settings.router)
+
 # Include the router in the main app
 app.include_router(api_router)
 

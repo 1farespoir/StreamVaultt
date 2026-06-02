@@ -1,0 +1,115 @@
+{
+  "theme": "dark",
+  "archetype": "Archetype 7: Electric & Neon (Future, Speed, Disruption)",
+  "typography": {
+    "headings": {
+      "fontFamily": "Outfit",
+      "weights": ["600", "700", "800"],
+      "letterSpacing": "tracking-tight"
+    },
+    "body": {
+      "fontFamily": "Poppins",
+      "weights": ["400", "500"]
+    },
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tighter",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight",
+      "h3": "text-xl sm:text-2xl font-semibold tracking-tight",
+      "p": "text-base leading-relaxed"
+    }
+  },
+  "colors": {
+    "background": {
+      "base": "#050505",
+      "surface": "#0A0A0A",
+      "elevated": "#111111"
+    },
+    "accent": {
+      "primary": "#00FF66",
+      "primaryHover": "#00E05A",
+      "secondary": "#10B981"
+    },
+    "text": {
+      "primary": "#F8FAFC",
+      "secondary": "#94A3B8",
+      "muted": "#475569",
+      "onAccent": "#000000"
+    },
+    "border": {
+      "default": "#22C55E20",
+      "hover": "#00FF6650"
+    }
+  },
+  "layout": {
+    "spacingScale": "Generous (p-8, p-12, p-16, gap-8, gap-12)",
+    "container": "max-w-7xl mx-auto px-6 lg:px-8",
+    "borderRadius": {
+      "card": "rounded-2xl",
+      "button": "rounded-full"
+    }
+  },
+  "surfaceStrategies": {
+    "hero": "Dark background with subtle green glow. Use abstract background image overlay with bg-black/60.",
+    "cards": "Glassmorphism: bg-white/5 backdrop-blur-xl border border-white/10 hover:border-[#00FF66]/50 shadow-[0_8px_32px_rgba(0,255,102,0.05)]",
+    "nav": "Sticky header with Crystal Glass: bg-black/60 backdrop-blur-xl border-b border-white/10",
+    "footer": "Solid deep black #050505 with generous py-20 padding."
+  },
+  "animations": {
+    "hover": "Subtle lift (-translate-y-1), border color changes to neon green, shadow increases.",
+    "entrance": "Framer Motion staggered fade-in up (y: 20, opacity: 0 -> 1).",
+    "glow": "Pulsing neon green drop-shadow on primary CTA."
+  },
+  "icons": {
+    "library": "lucide-react for UI icons, react-icons/si for brand logos (SiSpotify, SiNetflix, SiYoutube)",
+    "style": "Clean, line-based, scalable"
+  },
+  "media": {
+    "images": [
+      {
+        "category": "hero_background",
+        "url": "https://static.prod-images.emergentagent.com/jobs/18baf9a5-9187-4aa2-ab9f-10c428958b00/images/b68974a853f2f60830595a6905b8548393167730c2c9597a9a6cc2537c47d460.png",
+        "description": "Abstract 3D glassmorphism dark background with subtle neon green light leaks"
+      },
+      {
+        "category": "features_background",
+        "url": "https://static.prod-images.emergentagent.com/jobs/18baf9a5-9187-4aa2-ab9f-10c428958b00/images/3b0469bfc8f2fb84eeaf846f9daf686546509697ff0fc9daa213659a505781ad.png",
+        "description": "Dark mode server room / tech vault with green neon"
+      },
+      {
+        "category": "testimonial_avatar_1",
+        "url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdCUyMHBvcnRyYWl0fGVufDB8fHx8MTc4MDI5MjIzMnww&ixlib=rb-4.1.0&q=85",
+        "description": "Reviewer 1 portrait"
+      },
+      {
+        "category": "testimonial_avatar_2",
+        "url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdCUyMHBvcnRyYWl0fGVufDB8fHx8MTc4MDI5MjIzMnww&ixlib=rb-4.1.0&q=85",
+        "description": "Reviewer 2 portrait"
+      },
+      {
+        "category": "testimonial_avatar_3",
+        "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdCUyMHBvcnRyYWl0fGVufDB8fHx8MTc4MDI5MjIzMnww&ixlib=rb-4.1.0&q=85",
+        "description": "Reviewer 3 portrait"
+      }
+    ]
+  },
+  "components": {
+    "nav": "Logo (StreamVault text with a green glow), Nav links (Home, Subscriptions, Why Us, FAQ), Cart Button (Lucide icon, with item count badge). Fixed top.",
+    "hero": "H1: 'Unlock Premium Streaming for Less'. Subtitle: 'Get uninterrupted access to top-tier digital services at a fraction of the cost.' Primary CTA: 'View Subscriptions' (Solid neon green button, black text). Secondary CTA: 'How it works' (Outline). Use hero_background image.",
+    "subscriptions": "Bento Grid or Flex Wrap. 3 Cards: Spotify Premium, Netflix, YouTube Premium. Use SiSpotify, SiNetflix, SiYoutube. Include Pricing, Features list, and a glowing 'Buy Now' button. Card surface should be glassmorphism.",
+    "why_choose_us": "3-column grid. Icons: ShieldCheck (Secure Payments), Zap (Instant Delivery), Clock (24/7 Support). Dark cards on a subtle features_background image.",
+    "testimonials": "Carousel or grid of 3 reviews. Use avatar images. 5-star ratings.",
+    "faq": "Shadcn Accordion component customized for dark mode. No background, just bottom borders.",
+    "cart_drawer": "Slide-in panel (Shadcn Sheet) showing selected items. Total price. 'Proceed to Checkout' button.",
+    "checkout_mock": "A simple page or modal showing order summary and a 'Complete Purchase' button leading to a success state/toast. No login required."
+  },
+  "instructions_to_main_agent": [
+    "Ensure all interactive elements have data-testid attributes (e.g., data-testid='buy-now-spotify').",
+    "Use framer-motion for smooth entrance animations on sections and cards.",
+    "Use react-icons/si for the brand logos (Spotify, Netflix, YouTube) and lucide-react for standard UI icons.",
+    "Do not implement real auth/login, keep it a mock shop experience.",
+    "Do not add a WhatsApp button.",
+    "Use standard Tailwind classes for neon glows (e.g., shadow-[0_0_15px_#00FF66]).",
+    "Install necessary packages: yarn add react-icons framer-motion",
+    "Keep text contrast high: use off-white text over the dark background."
+  ]
+}

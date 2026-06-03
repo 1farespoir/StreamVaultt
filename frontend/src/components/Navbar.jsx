@@ -38,7 +38,7 @@ export const Navbar = () => {
             </div>
           </div>
           <span className="font-extrabold text-xl tracking-tight">
-            Stream<span className="text-[#00FF66]">Vault</span>
+            Get<span className="text-[#00FF66]">Sub</span>
           </span>
         </a>
 

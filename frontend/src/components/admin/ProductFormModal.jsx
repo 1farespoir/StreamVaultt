@@ -445,7 +445,7 @@ const ProductFormModal = ({ product, onClose }) => {
                 value={formData.seo_title}
                 onChange={handleChange}
                 className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-[#00FF66] text-white"
-                placeholder="Product Name - StreamVault"
+                placeholder="Product Name - GetSub"
               />
             </div>
 

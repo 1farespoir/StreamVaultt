@@ -61,7 +61,7 @@ const AdminDashboardPage = () => {
       {/* Header */}
       <div>
         <h1 className="text-3xl font-bold mb-2">Dashboard</h1>
-        <p className="text-gray-400">Welcome back! Here's what's happening with StreamVault today.</p>
+        <p className="text-gray-400">Welcome back! Here's what's happening with GetSub today.</p>
       </div>
 
       {/* Stats Grid */}

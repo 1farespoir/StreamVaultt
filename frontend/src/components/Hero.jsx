@@ -51,9 +51,9 @@ export const Hero = () => {
             className="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tighter leading-[1.05] mb-6"
             data-testid="hero-headline"
           >
-            Unlock <span className="text-gradient-green">Premium Streaming</span>
+            Get the Same <span className="text-gradient-green">Premium.</span>
             <br />
-            for Less.
+            Pay Less.
           </motion.h1>
 
           <motion.p
@@ -63,9 +63,7 @@ export const Hero = () => {
             className="text-base sm:text-lg text-slate-400 max-w-2xl mb-10 leading-relaxed"
             data-testid="hero-subtitle"
           >
-            Genuine Spotify, Netflix & YouTube Premium subscriptions delivered to your inbox
-            in under 60 seconds. No catches. No hidden fees. Just instant access at a
-            fraction of the price.
+            Leveraging global regional pricing to bring you premium subscriptions at prices that make sense
           </motion.p>
 
           <motion.div

@@ -1,5 +1,5 @@
 """
-Seed script to populate initial data for StreamVault
+Seed script to populate initial data for GetSub
 Run this once to migrate existing products and testimonials to the database
 """
 import asyncio
@@ -124,7 +124,7 @@ async def seed_products():
             "is_active": True,
             "is_popular": False,
             "in_stock": True,
-            "seo_title": "YouTube Premium - Save 70% | StreamVault",
+            "seo_title": "YouTube Premium - Save 70% | GetSub",
             "seo_description": "YouTube Premium at huge discounts. Ad-free videos and YouTube Music included.",
             "seo_keywords": ["youtube", "youtube premium", "ad-free youtube", "youtube music"],
             "custom_fields": {"badge": "Save 70%"},
@@ -166,7 +166,7 @@ async def seed_testimonials():
             "name": "Sofia Reyes",
             "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdCUyMHBvcnRyYWl0fGVufDB8fHx8MTc4MDI5MjIzMnww&ixlib=rb-4.1.0&q=85",
             "rating": 5.0,
-            "text": "Netflix Premium at a third of the price and it just works. Already gifted two subscriptions to my family. StreamVault is the real deal.",
+            "text": "Netflix Premium at a third of the price and it just works. Already gifted two subscriptions to my family. GetSub is the real deal.",
             "product_purchased": "Netflix Premium",
             "is_active": True,
             "is_featured": True,
@@ -203,7 +203,7 @@ async def seed_settings():
     
     settings = {
         "id": "site_settings",
-        "site_name": "StreamVault",
+        "site_name": "GetSub",
         "site_tagline": "Unlock Premium Streaming for Less",
         "primary_color": "#00FF66",
         "secondary_color": "#000000",
@@ -221,7 +221,7 @@ async def seed_settings():
             "facebook": "https://facebook.com/streamvault",
             "instagram": "https://instagram.com/streamvault"
         },
-        "seo_title": "StreamVault - Premium Subscriptions at Discount Prices",
+        "seo_title": "GetSub - Premium Subscriptions at Discount Prices",
         "seo_description": "Get Spotify, Netflix, YouTube Premium and more at up to 70% off. Instant delivery, lifetime warranty.",
         "custom_settings": {},
         "updated_at": datetime.now(timezone.utc).isoformat()
@@ -232,7 +232,7 @@ async def seed_settings():
 
 
 async def main():
-    print("\n🚀 Starting StreamVault database seeding...\n")
+    print("\n🚀 Starting GetSub database seeding...\n")
     
     try:
         await seed_products()

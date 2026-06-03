@@ -48,7 +48,7 @@ export const Footer = () => {
 
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between pt-8 border-t border-white/5 gap-4">
           <p className="text-xs text-slate-600">
-            © 2026 StreamVault. All trademarks belong to their respective owners.
+            © 2026 GetSub. All trademarks belong to their respective owners.
           </p>
           <div className="flex items-center gap-3">
             {[Twitter, Instagram, Github].map((Icon, i) => (

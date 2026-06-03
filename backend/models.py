@@ -249,7 +249,7 @@ class SiteSettings(BaseModel):
     model_config = ConfigDict(extra="ignore")
     
     id: str = "site_settings"
-    site_name: str = "StreamVault"
+    site_name: str = "GetSub"
     site_tagline: str = "Unlock Premium Streaming for Less"
     primary_color: str = "#00FF66"
     secondary_color: str = "#000000"

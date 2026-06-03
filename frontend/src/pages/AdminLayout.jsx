@@ -39,7 +39,7 @@ const AdminLayout = () => {
           
           <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate('/admin')}>
             <Zap className="text-[#00FF66]" size={24} />
-            <span className="text-xl font-bold">StreamVault <span className="text-[#00FF66]">Admin</span></span>
+            <span className="text-xl font-bold">GetSub <span className="text-[#00FF66]">Admin</span></span>
           </div>
         </div>
 

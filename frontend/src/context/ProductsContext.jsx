@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, useEffect, useCallback } fr
 import { products as defaultProducts } from "../data/products";
 
 const ProductsContext = createContext(null);
-const STORAGE_KEY = "streamvault_products_v1";
+const STORAGE_KEY = "getsub_products_v1";
 
 export const ProductsProvider = ({ children }) => {
   const [products, setProducts] = useState(() => {

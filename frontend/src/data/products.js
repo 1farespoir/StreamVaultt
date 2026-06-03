@@ -87,7 +87,7 @@ export const reviews = [
     name: "Sofia Reyes",
     role: "Premium Member",
     rating: 5,
-    text: "Netflix Premium at a third of the price and it just works. Already gifted two subscriptions to my family. StreamVault is the real deal.",
+    text: "Netflix Premium at a third of the price and it just works. Already gifted two subscriptions to my family. GetSub is the real deal.",
     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdCUyMHBvcnRyYWl0fGVufDB8fHx8MTc4MDI5MjIzMnww&ixlib=rb-4.1.0&q=85",
   },
   {
@@ -102,7 +102,7 @@ export const reviews = [
 
 export const faqs = [
   {
-    q: "How does StreamVault offer such steep discounts?",
+    q: "How does GetSub offer such steep discounts?",
     a: "We source surplus regional & family-plan inventory directly from authorized partners. By passing those savings to you, we cut up to 70% off retail without any compromise on the service quality.",
   },
   {
@@ -123,6 +123,6 @@ export const faqs = [
   },
   {
     q: "Do I need to create an account?",
-    a: "Nope. StreamVault is a no-friction shop. Drop your email at checkout and the credentials land in your inbox seconds later.",
+    a: "Nope. GetSub is a no-friction shop. Drop your email at checkout and the credentials land in your inbox seconds later.",
   },
 ];
